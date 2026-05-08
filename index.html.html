@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Being Adult — Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0D001A;
+      color: #EDD9FF;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 15px;
+      line-height: 1.8;
+      padding: 0 16px 60px;
+    }
+
+    header {
+      background: linear-gradient(180deg, #4A0090, #1A0035);
+      border-bottom: 3px solid #FFD700;
+      padding: 36px 24px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Press Start 2P', monospace;
+      font-size: clamp(13px, 3vw, 20px);
+      color: #FFD700;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #B44FD4;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto 0;
+    }
+
+    .card {
+      background: #1A0035;
+      border: 2px solid #5A1A8A;
+      padding: 28px 28px 24px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-family: 'Press Start 2P', monospace;
+      font-size: clamp(9px, 2vw, 11px);
+      color: #FFD700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #5A1A8A;
+    }
+
+    p { margin-bottom: 12px; color: #EDD9FF; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      margin: 8px 0 12px 0;
+    }
+
+    ul li {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      color: #EDD9FF;
+    }
+
+    ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #B44FD4;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #06000D;
+      border: 1px solid #B44FD4;
+      color: #B44FD4;
+      font-size: 10px;
+      letter-spacing: 1px;
+      padding: 2px 8px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      color: #FFD700;
+      font-weight: bold;
+    }
+
+    a { color: #B44FD4; text-decoration: none; }
+    a:hover { color: #FFD700; }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      color: #5A1A8A;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    .updated {
+      text-align: right;
+      font-size: 11px;
+      color: #8B6A9A;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>✦ BEING ADULT ✦</h1>
+  <p>PRIVACY POLICY</p>
+</header>
+
+<main>
+
+  <p class="updated">Last updated: May 2026</p>
+
+  <div class="card">
+    <h2>OVERVIEW</h2>
+    <p>
+      Being Adult is a personal finance app for tracking recurring bills and due dates.
+      Your privacy is important. This policy explains what data the app uses, where it stays,
+      and what permissions it requires and why.
+    </p>
+    <p>
+      <span class="highlight">Short version:</span> all your data lives on your device.
+      We do not collect, transmit, or sell any personal information.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>DATA STORAGE</h2>
+    <p>
+      Everything you enter — bill names, amounts, due dates, payment history — is stored
+      in a local database on your device only. No account is required.
+      No data is uploaded to any server.
+    </p>
+    <p>
+      If you uninstall the app, all data is permanently deleted from your device.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>PERMISSIONS</h2>
+    <p>The app requests the following permissions:</p>
+    <ul>
+      <li>
+        <span class="tag">NOTIFICATIONS</span>
+        To send you bill due-date reminders and water meter reading reminders.
+      </li>
+      <li>
+        <span class="tag">SCHEDULE_EXACT_ALARM</span>
+        To deliver notifications at the precise time you set.
+      </li>
+      <li>
+        <span class="tag">CALENDAR</span>
+        To optionally add bill due dates to your device calendar. Only used when you enable calendar sync. No calendar data is read beyond confirming the write succeeded.
+      </li>
+      <li>
+        <span class="tag">CAMERA</span>
+        To let you photograph a bill so the app can read the amount and date via on-device text recognition. Photos are processed locally and never stored or transmitted.
+      </li>
+      <li>
+        <span class="tag">STORAGE</span>
+        To let you pick an existing photo from your gallery for the same OCR feature.
+      </li>
+      <li>
+        <span class="tag">BIOMETRIC</span>
+        To lock the app with your fingerprint or face if you enable the biometric lock setting. Biometric data never leaves your device — authentication is handled entirely by Android.
+      </li>
+      <li>
+        <span class="tag">RECEIVE_BOOT_COMPLETED</span>
+        To reschedule notifications after the device restarts so you don't miss reminders.
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>THIRD-PARTY SERVICES</h2>
+    <p>The app uses the following third-party components:</p>
+    <ul>
+      <li>
+        <span class="highlight">Google ML Kit (Text Recognition)</span> — runs entirely
+        on-device. No images or text are sent to Google servers.
+      </li>
+      <li>
+        <span class="highlight">Google Fonts</span> — the app downloads the
+        Press Start 2P font from Google Fonts on first launch. After that it is cached
+        locally. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+      </li>
+    </ul>
+    <p>No analytics, crash reporting, or advertising SDKs are included.</p>
+  </div>
+
+  <div class="card">
+    <h2>CHILDREN'S PRIVACY</h2>
+    <p>
+      Being Adult is not directed at children under 13. We do not knowingly collect
+      any information from children.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>CHANGES TO THIS POLICY</h2>
+    <p>
+      If this policy changes, the updated version will be posted at this URL with a
+      revised date at the top. Continued use of the app after changes constitutes
+      acceptance of the new policy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>CONTACT</h2>
+    <p>
+      Questions or concerns about this privacy policy? Contact:<br/>
+      <a href="mailto:riconurmsalu@gmail.com">riconurmsalu@gmail.com</a>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>BEING ADULT &copy; 2026 &mdash; ALL DATA STAYS ON YOUR DEVICE</p>
+</footer>
+
+</body>
+</html>
